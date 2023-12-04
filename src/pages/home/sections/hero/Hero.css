@@ -26,8 +26,8 @@
     display: block;
     width: max-content;
     margin-bottom: 24px;
-    background-color: var(--brown-color);
-    color: var(--orange-color);
+    background-color: var(--orange-color);
+    color: var(--white-color);
     border-radius: 123px;
     padding: 5px 20px;
 }
