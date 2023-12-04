@@ -1,4 +1,5 @@
 import "./Hero.css";
+import { Button, Li } from "../../../../design-system/Button/Button";
 import hero from "../../../../assets/hero.png";
 const Hero = () => {
     return (
@@ -13,12 +14,12 @@ const Hero = () => {
                         reiciendis voluptatum eos quasi incidunt.
                     </p>
                     <div className="hero-section__cta">
-                        <button className="btn btn-lg btn-orange">
+                        <Button size="lg" color="orange">
                             Order Now
-                        </button>
-                        <button className="btn btn-lg btn-green">
+                        </Button>
+                        <Button size="lg" color="green">
                             Reservation
-                        </button>
+                        </Button>
                     </div>
                 </div>
                 <div className="hero-section__right">

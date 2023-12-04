@@ -2,6 +2,16 @@ import "./Chefs.css";
 import chef1 from "../../../../assets/betran.png";
 import chef2 from "../../../../assets/ferry.png";
 import chef3 from "../../../../assets/iswan.png";
+
+const Chef = (props) => {
+    return (
+        <div className="chefs-section__chef">
+            <img src={props.img} alt="Betran Chef" />
+            <h4>{props.name}</h4>
+            <p>{props.title}</p>
+        </div>
+    );
+};
 export const Chefs = () => {
     return (
         <section id="chefs-section">
@@ -10,21 +20,9 @@ export const Chefs = () => {
                     Our Greatest <span>Chefs</span>
                 </h2>
                 <div className="chefs-section__chefs">
-                    <div className="chefs-section__chef">
-                        <img src={chef1} alt="Betran Chef" />
-                        <h4>Betran Komar</h4>
-                        <p>Chef</p>
-                    </div>
-                    <div className="chefs-section__chef">
-                        <img src={chef2} alt="Ferry Sauwi" />
-                        <h4>Ferry Sauwi</h4>
-                        <p>Head Chef</p>
-                    </div>
-                    <div className="chefs-section__chef">
-                        <img src={chef3} alt="Iswan Chef" />
-                        <h4>Iswan Dracho</h4>
-                        <p>Chef</p>
-                    </div>
+                    <Chef img={chef1} name={"Betran Komar"} title="Chef" />
+                    <Chef img={chef2} name={"Ferry Sauwi"} title="Head Chef" />
+                    <Chef img={chef3} name={"Iswan Dracho"} title="Chef" />
                 </div>
                 <button className="btn btn-lg btn-orange">View All</button>
             </div>
