@@ -8,15 +8,15 @@
 
 .navigation {
     max-width: 1440px;
-    margin: auto;
+    margin: 0 auto;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 100%;
 
     padding-left: 80px;
-    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .navigation__links {
@@ -25,7 +25,7 @@
     align-items: center;
 }
 
-.navigatiion__links li a {
+.navigation__links li a {
     color: var(--black-color);
     font-size: 14px;
 }
@@ -33,18 +33,13 @@
     color: #ff8a00;
 }
 
-/* #navigation__link {
+/* .navigation__links {
     color: var(--orange-color);
 } */
-
-.navigation__link {
-    color: #ff8a00;
-}
 
 .navigation__actions {
     display: flex;
     align-items: center;
-    gap: 25px;
 }
 
 .navigation__actions img {
@@ -61,4 +56,80 @@
     align-items: center;
     justify-content: center;
     margin-right: 25px;
+}
+
+#mobile-nav-icon {
+    display: none;
+    width: 2.4rem;
+    cursor: pointer;
+}
+
+/* Tablet */
+@media (max-width: 70em) {
+    .navigation {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    .navigation__links,
+    .navigation__actions button {
+        display: none;
+    }
+    .navigation__actions figure {
+        margin-left: 4.2rem;
+    }
+
+    #mobile-nav-icon {
+        display: inline-block;
+        position: absolute;
+        right: 6rem;
+    }
+
+    .mobile-nav {
+        padding: 4rem 4.8rem;
+        text-align: center;
+
+        .mobile-navigation__links li {
+            display: block;
+            margin-bottom: 2rem;
+        }
+
+        .mobile-navigation__links li a {
+            color: var(--black-color);
+            font-size: 1.4rem;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 60em) {
+    .navigation {
+        padding-left: 6.4rem;
+        padding-right: 6.4rem;
+    }
+    .btn {
+        display: none;
+    }
+
+    .navigation__links {
+        display: none;
+    }
+
+    #mobile-nav-icon {
+        display: block;
+        right: 6.4rem;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+}
+
+@media (max-width: 50em) {
+    .navigation {
+        padding-left: 4.8rem;
+        padding-right: 4.8rem;
+    }
+    #mobile-nav-icon {
+        right: 4.8rem;
+    }
 }
