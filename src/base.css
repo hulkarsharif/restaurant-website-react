@@ -14,6 +14,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    font-size: 62.5%;
+}
 
 :root {
     --orange-color: rgb(255, 138, 0);
