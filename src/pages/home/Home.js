@@ -11,8 +11,8 @@ export const Home = () => {
     return (
         <>
             <TopNavigation />
-            {/* <Hero />
-            <Welcome />
+            <Hero />
+            {/*<Welcome />
             <Menu />
             <Reservation />
             <Chefs />
